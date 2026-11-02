@@ -1,0 +1,55 @@
+{
+  "name": "@limiq/store-redis",
+  "version": "0.1.0",
+  "description": "Redis store for @limiq/core — atomic Lua scripts, injected client (no redis dependency)",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "prepublishOnly": "tsc -b"
+  },
+  "dependencies": {
+    "@limiq/core": "workspace:*"
+  },
+  "license": "MIT",
+  "author": "Sandeep Vaid",
+  "sideEffects": false,
+  "keywords": [
+    "rate-limit",
+    "rate-limiter",
+    "ratelimit",
+    "throttle",
+    "throttling",
+    "redis",
+    "typescript",
+    "nodejs",
+    "ioredis",
+    "lua",
+    "store",
+    "cluster"
+  ],
+  "homepage": "https://github.com/sandeepvaid/limiq#readme",
+  "bugs": {
+    "url": "https://github.com/sandeepvaid/limiq/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandeepvaid/limiq.git",
+    "directory": "packages/store-redis"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

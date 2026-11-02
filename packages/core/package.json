@@ -1,0 +1,54 @@
+{
+  "name": "@limiq/core",
+  "version": "0.1.0",
+  "description": "Framework-agnostic rate limiting engine, types, strategies and resolvers",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "typecheck": "tsc -b --noEmit false",
+    "test": "echo \"(core) no tests yet\" && exit 0",
+    "prepublishOnly": "tsc -b"
+  },
+  "license": "MIT",
+  "author": "Sandeep Vaid",
+  "sideEffects": false,
+  "keywords": [
+    "rate-limit",
+    "rate-limiter",
+    "ratelimit",
+    "throttle",
+    "throttling",
+    "redis",
+    "typescript",
+    "nodejs",
+    "token-bucket",
+    "sliding-window",
+    "leaky-bucket",
+    "fixed-window"
+  ],
+  "homepage": "https://github.com/sandeepvaid/limiq#readme",
+  "bugs": {
+    "url": "https://github.com/sandeepvaid/limiq/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandeepvaid/limiq.git",
+    "directory": "packages/core"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

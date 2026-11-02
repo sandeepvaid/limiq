@@ -1,0 +1,11 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/core" },
+    { "path": "./packages/store-memory" },
+    { "path": "./packages/store-redis" },
+    { "path": "./packages/middleware-express" },
+    { "path": "./packages/metrics-prometheus" },
+    { "path": "./packages/dashboard" }
+  ]
+}

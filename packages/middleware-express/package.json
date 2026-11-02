@@ -1,0 +1,53 @@
+{
+  "name": "@limiq/express",
+  "version": "0.1.0",
+  "description": "Express middleware adapter for @limiq/core",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -b",
+    "prepublishOnly": "tsc -b"
+  },
+  "dependencies": {
+    "@limiq/core": "workspace:*"
+  },
+  "license": "MIT",
+  "author": "Sandeep Vaid",
+  "sideEffects": false,
+  "keywords": [
+    "rate-limit",
+    "rate-limiter",
+    "ratelimit",
+    "throttle",
+    "throttling",
+    "redis",
+    "typescript",
+    "nodejs",
+    "express",
+    "middleware"
+  ],
+  "homepage": "https://github.com/sandeepvaid/limiq#readme",
+  "bugs": {
+    "url": "https://github.com/sandeepvaid/limiq/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandeepvaid/limiq.git",
+    "directory": "packages/middleware-express"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
